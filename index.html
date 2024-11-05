@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paper Co - Home</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./assets/images/Paper Co Logo Retake No BG.png">
+    </head>
+
+    <body>
+        <nav id="sidebar">
+            <ul>
+                <li id="toggle">
+                    <button id="toggle-btn">
+                        <img src="./assets/images/Paper Co Logo Retake No BG.png" alt="Paper Co Logo">
+                    </button>
+                    <span>Paper Co.</span>
+                </li>
+            </ul>
+            <ul class="list">
+                <li class="active"><a href="./index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span>Home</span>
+                </a></li>
+                <li>
+                    <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"/></svg>
+                        <span>Products</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                    </button>
+                    <ul class="sub-menu">
+                        <div>
+                            <li><a href="./public/products/normal.html">
+                                <span>Normal Items</span>
+                            </a></li>
+                            <li><a href="./public/products/kits.html">
+                                <span>Kits</span>
+                            </a></li>
+                            <li><a href="./public/products/thins.html">
+                                <span>Paper Co Thins</span>
+                            </a></li>
+                            <li><a href="./public/products/bids.html">
+                                <span>Bids</span>
+                            </a></li>
+                            <li><a href="./public/products/coding.html">
+                                <span>Coding</span>
+                            </a></li>
+                            <li><a href="./public/products/games.html">
+                                <span>Games</span>
+                            </a></li>
+                            <li><a href="./public/products/priprepro.html">
+                                <span>Prime/Premium/Pro</span>
+                            </a></li>
+                            <li><a href="./public/products/ambigrams.html">
+                                <span>Ambigrams</span>
+                            </a></li>
+                        </div>
+                    </ul>
+                <li>
+                    <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M300-240q25 0 42.5-17.5T360-300q0-25-17.5-42.5T300-360q-25 0-42.5 17.5T240-300q0 25 17.5 42.5T300-240Zm0-360q25 0 42.5-17.5T360-660q0-25-17.5-42.5T300-720q-25 0-42.5 17.5T240-660q0 25 17.5 42.5T300-600Zm180 180q25 0 42.5-17.5T540-480q0-25-17.5-42.5T480-540q-25 0-42.5 17.5T420-480q0 25 17.5 42.5T480-420Zm180 180q25 0 42.5-17.5T720-300q0-25-17.5-42.5T660-360q-25 0-42.5 17.5T600-300q0 25 17.5 42.5T660-240Zm0-360q25 0 42.5-17.5T720-660q0-25-17.5-42.5T660-720q-25 0-42.5 17.5T600-660q0 25 17.5 42.5T660-600ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"/></svg>
+                        <span>Gambling</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                    </button>
+                    <ul class="sub-menu">
+                        <div>
+                            <li><a href="./public/gambling/randnum.html">
+                                <span>Random Number Game</span>
+                            </a></li>
+                            <li><a href="./public/gambling/slots.html">
+                                <span>Slot Machine</span>
+                            </a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li><a href="./public/contact.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span>Contact Us</span>
+                </a></li>
+                <li><a href="./public/updates.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-80-10-120h-10q-142 0-241-99t-99-241q0-142 99-241t241-99q71 0 132.5 26.5t108 73q46.5 46.5 73 108T800-540q0 75-24.5 144t-67 128q-42.5 59-101 107T480-80Zm80-146q71-60 115.5-140.5T720-540q0-109-75.5-184.5T460-800q-109 0-184.5 75.5T200-540q0 109 75.5 184.5T460-280h100v54Zm-101-95q17 0 29-12t12-29q0-17-12-29t-29-12q-17 0-29 12t-12 29q0 17 12 29t29 12Zm-29-127h60q0-30 6-42t38-44q18-18 30-39t12-45q0-51-34.5-76.5T460-720q-44 0-74 24.5T344-636l56 22q5-17 19-33.5t41-16.5q27 0 40.5 15t13.5 33q0 17-10 30.5T480-558q-35 30-42.5 47.5T430-448Zm30-65Z"/></svg>
+                    <span>Update Log</span>
+                </a></li>
+                <li><a href="./public/privacy.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"/></svg>
+                    <span>Privacy Policy</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="header">
+                <img src="./assets/images/Paper Co Logo Retake No BG.png" alt="Paper Co Logo">
+                <h1>Paper Co</h1>
+            </div>
+            <div class="text">
+                <a href="https://arpan-shah-102.github.io/portfolio-template/" target="_blank"><button class="name">By: Arpan K Shah</button></a>
+                <p class="body-txt">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Welcome to Paper Co! Here, you can buy many paper products for a good
+                    price. Some best sellers are paper katanas, paper double blades, paper staffs, and paper tridents. We
+                    also have much more than just paper products. We have games, bids, programming, etc.
+                    <small>(This website is a revised version of the old version of this website. You can find that
+                    link <a href="https://sites.google.com/view/papercoweb/home" target="_blank">here</a> if you want to visit it)</small>
+                </p>
+            </div>
+        </main>
+
+        <div></div>
+        <footer>
+            <div>
+                <p>&copy; 2023 Paper Co. All rights reserved.</p>
+                <p>Version 3.2 BETA</p>
+            </div>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <span>USE CODE "Cool Beans" TO GET A CHANCE OF WINNING A FREE PRODUCT</span>
+            </ul>
+        </footer>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
