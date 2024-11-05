@@ -47,6 +47,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 p, .sub-menu a {
     font-family: "Afacad Flux", Arial;
