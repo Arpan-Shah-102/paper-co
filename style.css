@@ -107,7 +107,7 @@ main {
 }
 .name {
     display: inline;
-    border: 1px solid rgb(192, 192, 192);
+    border: 2px solid rgb(192, 192, 192);
     padding: 6px 12px;
     border-radius: 8px;
     cursor: pointer;
@@ -124,6 +124,11 @@ main {
 .text > a {
     text-decoration: none;
     color: var(--main-body-text);
+}
+.text > a > button {
+    font-family: "Afacad Flux", Arial;
+    font-weight: bold;
+    line-height: 1;
 }
 
 #sidebar {
